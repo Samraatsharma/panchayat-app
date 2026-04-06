@@ -1,78 +1,75 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/Gemini_AI-2.5_Flash-blue?style=for-the-badge" alt="Gemini AI" />
-  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Firebase-v10-orange?style=for-the-badge&logo=firebase" alt="Firebase" />
-  <h1>🏡 Panchayat</h1>
-  <p><b>The world's simplest, AI-powered housing society management platform.</b></p>
+  <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013&auto=format&fit=crop" width="100%" height="300px" style="object-fit: cover; border-radius: 24px;" alt="Panchayat Header" />
+  
+  # 🏡 PANCHAYAT: ELDER-FIRST AI
+  **The World's Simplest, AI-Powered Residential Architecture**
+
+  [![Next.js](https://img.shields.io/badge/Next.js-16.2-blueviolet?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+  [![Gemini AI](https://img.shields.io/badge/Gemini-2.5_Flash-blue?style=for-the-badge&logo=googlegemini)](https://deepmind.google/technologies/gemini/)
+  [![Firebase](https://img.shields.io/badge/Firebase-Realtime-FFCA28?style=for-the-badge&logo=firebase)](https://firebase.google.com/)
+
+  ---
+
+  ### 💠 THE VISION
+  **Panchayat** reimagines residential management through the lens of **Accessibility**. It is the first society platform designed specifically for **Elders**, stripping away complex menus in favor of a "Speak-to-Resolve" architecture powered by **Google Gemini**.
+
+  [Launch Dashboard](http://localhost:3000) • [View Documentation](README.md) • [System Status](https://img.shields.io/badge/Status-Operational-success)
 </div>
 
-<br />
+## 🚀 INTELLIGENT FEATURES
 
-## 🌟 Overview
+### 🎙️ **Neural Voice-to-Ticket**
+Residents don't click buttons; they speak. Our **Gemini-powered parser** transcribes natural speech (in any language), extracts the core grievance, and categorizes it with high-precision maintenance tags automatically.
 
-**Panchayat** is a revolutionary residential society management platform designed not just for managers, but specifically crafted to be **Elder-Friendly**. Utilizing the deep intelligence of the Google Gemini AI Engine, we've stripped away complex dropdowns, tiny text, and nested menus.
+### 🤖 **Rulebook Intelligence**
+Stop calling the front desk. The **AI Assistant** acts as a 24/7 knowledge node, instantly answering queries about visitor protocols, facility timings, or complex society noise rules using RAG-lite architecture.
 
-Simply press a button, speak your problem naturally, and our AI will file, categorize, and prioritize the maintenance ticket automatically. 
+### 📊 **Drama-Filter™ (Admin)**
+Admins can bypass the noise. The "Summarize Drama" protocol uses Gemini to ingest hundreds of fragmented complaints and distill them into **High-Impact Bullet Points**, identifying structural issues before they escalate.
 
----
-
-## ✨ Premium Features
-
-- 🎙️ **Voice-to-Ticket AI:** Residents can just speak their complaint in any language. The AI parses the transcription, extracts the core issue, and categorizes it logically.
-- 🤖 **Rulebook AI Assistant:** Stop calling the front desk. Ask the AI instantly about visitor protocols, pool timings, or noise rules.
-- 📊 **Drama-Filter AI (Admin):** Admins can hit the "Summarize Drama" button to have Gemini read through hundreds of complaints and distill the top structural issues into actionable bullet points.
-- 👓 **Elder-Friendly UI/UX:** Built upon the Material Design 3 language. Featuring massive touch targets, pillowy dynamic contrasts, and high-visibility typography.
-- ⚡ **Offline Grace-Fallback:** Robust offline detection caching seamlessly redirects users dynamically without crashing or throwing infinite spinners when the internet drops.
-- 💳 **Expense & Billing Tracking:** Instant visual feedback for maintenance dues and collections.
+### 👓 **Elder-Centric UI (Material 3)**
+Built with **Pillowy Contrast** and massive touch targets. Featuring high-visibility typography and a "No-Nested-Menus" philosophy to ensure every resident, regardless of age, feels empowered.
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ THE CELESTIAL STACK
 
-- **Frontend:** Next.js 15 (React 19), Tailwind CSS, Vanilla styling
-- **Backend/Database:** Firebase Firestore (Real-time architecture)
-- **Authentication:** Firebase Auth
-- **AI Brain:** Google `@google/genai` (Gemini 2.5 Flash SDK)
-- **Deployment:** Vercel
+- **Framework**: [Next.js 16 (App Router)](https://nextjs.org/) - Ultra-fast hydration.
+- **AI Engine**: [Google `@google/genai`](https://www.npmjs.com/package/@google/genai) - Gemini 2.x Flash.
+- **Real-time Core**: [Firebase Firestore](https://firebase.google.com/products/firestore) - Low-latency state sync.
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) - High-utility glassmorphism.
+- **Icons**: [Lucide React](https://lucide.dev/) - Clean, accessible glyphs.
 
 ---
 
-## 🚀 Quick Start
+## 🏁 ARCHITECT SETUP
 
-Want to run Panchayat locally?
+1. **Clone the Protocol**
+   ```bash
+   git clone https://github.com/Samraatsharma/panchayat-app.git
+   cd panchayat-app
+   ```
 
-**1. Clone the repository**
-```bash
-git clone https://github.com/Samraatsharma/panchayat-app.git
-cd panchayat-app
-```
+2. **Initialize Node Environment**
+   ```bash
+   npm install
+   ```
 
-**2. Install dependencies**
-```bash
-npm install
-```
+3. **Configure Telemetry**
+   Create a `.env.local` with your Firebase and Gemini identifiers:
+   ```env
+   NEXT_PUBLIC_FIREBASE_API_KEY=xxx
+   NEXT_PUBLIC_GEMINI_API_KEY=xxx
+   ```
 
-**3. Configure Environment Variables**
-Create a `.env.local` file at the root of your project:
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=12345
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_flash_key
-```
-
-**4. Start the development server**
-```bash
-npm run dev
-```
-Navigate to `http://localhost:3000` to see the magic happen!
+4. **Boot the Interface**
+   ```bash
+   npm run dev
+   ```
 
 ---
 
 <div align="center">
-  <i>Built with ❤️ for a seamless living experience.</i>
+  <sub>Designed with ❤️ for a seamless, accessible living experience. © 2024 Panchayat Galactic.</sub>
 </div>
